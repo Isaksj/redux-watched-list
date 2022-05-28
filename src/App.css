@@ -1,38 +1,80 @@
 .App {
-  text-align: center;
+    display:block;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+.SearchField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MovieArea {
+    margin: 3% 19% 0% 16%;
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    
+    min-width: 100vh;
+  
+    
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Movie {
+    border: 3px black solid;
+    border-radius: 20%;
+    padding: 2px;
+    text-align: center;
+    margin: 5px;
+
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Seen .Movie {
+    background-color: lightblue;
 }
 
-.App-link {
-  color: #61dafb;
+.Unseen .Movie {
+    background-color: greenyellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Movie:hover {
+    
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+
 }
+
+.Movie:active {
+    background-color: lightgray;
+
+}
+
+.Unseen {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.Seen {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Overview {
+   display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: calc(5px + 2vmin);
+    
+}
+
+.title {
+    text-align: center;
+
+}
+
